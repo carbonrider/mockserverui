@@ -1,0 +1,20 @@
+<mat-card>
+  <mat-card-title>Configuration</mat-card-title>
+  <mat-card-subtitle>Required for interacting with Mock server</mat-card-subtitle>
+  <mat-card-content>
+    <form [formGroup]="configurationForm" (ngSubmit)="submitForm()">
+      <div class="form-container horizontal">
+        <div class="field">
+          <mat-form-field>
+            <mat-label>API URL</mat-label>
+            <input matInput placeholder="API URL" formControlName="apiURL" autocomplete="off">
+            <mat-error>URL is required</mat-error>
+          </mat-form-field>
+        </div>
+        <div class="buttons">
+          <button mat-raised-button color="primary">Save</button>
+        </div>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

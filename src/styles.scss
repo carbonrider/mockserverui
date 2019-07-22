@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { padding:0; margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; font-size: 13px;}
+
+* {
+    box-sizing: border-box;
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .field {
+        margin: 1rem 0;
+    }
+    
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    
+    &.horizontal{
+        flex-direction: row;
+        align-items: center;
+
+        .field{
+            margin: 0 1rem;
+        }
+    }
+}
